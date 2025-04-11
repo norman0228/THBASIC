@@ -1,4 +1,4 @@
-/* styles.css */
+/* 全局樣式 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -53,42 +53,43 @@ input {
 button {
     width: 100%;
     padding: 15px;
-    background: #4CAF50;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s;
 }
 
 button:hover {
-    background: #45a049;
+    background-color: #45a049;
 }
 
 .results {
     margin-top: 20px;
     padding: 15px;
-    background: #f8f9fa;
+    background-color: #f8f9fa;
     border-radius: 6px;
 }
 
 .results p {
-    margin: 12px 0;
-    font-size: 16px;
-    color: #333;
+    margin-bottom: 10px;
 }
 
+/* 響應式設計 */
 @media (max-width: 480px) {
     .input-row {
-        flex-direction: column;
+        flex-direction: column; /* 手機版垂直排列 */
+        gap: 15px; /* 增加間距 */
     }
-    
+
     .calculator-box {
-        padding: 15px;
+        padding: 15px; /* 手機版縮小內邊距 */
+        font-size: smaller; /* 字體縮小 */
     }
-    
+
     h2 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* 手機版縮小標題字體 */
+        margin-bottom: 20px; /* 減少間距 */
     }
 }
